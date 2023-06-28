@@ -1,0 +1,282 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-box {
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: 0.35fr 0.65fr;
+    position: absolute;
+  }
+
+  .inner-box-right {
+    width: 100vw;
+    grid-row: 1/2;
+    align-self: start;
+  
+    display: flex;
+  }
+  
+  .img-illustration {
+    width: 100%;
+  }
+  
+  .inner-box-left {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100vw;
+
+    grid-row: 2/3;
+    align-self: start;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .box-title {
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    font-size: 11vw;
+    padding-left: 6vw;
+    margin-bottom: 5vw;
+    
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .box-join {
+    width: 95%;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(235, 18%, 26%);
+    font-size: 4.5vw;
+    padding-left: 6vw;
+    margin-bottom: 8vw;
+  }
+  
+  .general-box-description {
+    width: 90%;
+  
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5vw;
+    margin-bottom: 9vw;
+  }
+  
+  .box-description {
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(235, 18%, 26%);
+    font-size: 4.5vw;
+    padding-left: 6vw;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .check {
+    height: 100%;
+    width: 7vw;
+  
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .icon-list {
+    width: 5vw;
+  }
+  
+  .description {
+    width: 100%;
+  
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .box-email {
+    width: 95%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-left: 6vw;
+    margin-bottom: 8vw;
+  }
+  
+  .email-address {
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    width: 88vw;
+    color: hsl(235, 18%, 26%);
+    font-size: 3.5vw;
+    margin-bottom: 3vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mail-input {
+    -webkit-tap-highlight-color: transparent;
+    font-size: 4vw;
+    width: 81vw;
+    height: 13vw;
+    padding-left: 7vw;
+    border-style: solid;
+    border-color: hsl(233, 7%, 75%);
+    border-width: 1px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: hsl(234, 29%, 20%);
+  }
+
+  .mail-input:focus{
+    outline:none;
+    border-color: hsl(234, 29%, 20%);
+  }
+  
+  .mail-input::placeholder {
+    color: hsl(235, 8%, 72%);
+  }
+  
+  
+  
+  .box-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-left: 6vw;
+    margin-bottom: 15vw;
+  }
+  
+  .btn-subscribe {
+    -webkit-tap-highlight-color: transparent;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    width: 89vw;
+    height: 15vw;
+    background-color: hsl(234, 29%, 20%);
+    border-style: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 4.5vw;
+    cursor: pointer;
+  }
+
+  .btn-subscribe:focus{
+    outline:none;
+  }
+  
+  /* .btn-subscribe:focus {
+    background-image: linear-gradient(to right,#FF527B, #FF6A3A);
+  } */
+
+  /* //////////////////////////////////////////////// */
+
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+  }
+  
+  .box-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .part-1 {
+    margin-top: 15vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  
+    display: flex;
+    align-items: end;
+    justify-content: start;
+  }
+  
+  .icon-success {
+    width: 15vw;
+  }
+  
+  .part-2 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 11vw;
+    color: hsl(234, 29%, 20%); 
+  }
+  
+  .part-3 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    color: hsl(235, 18%, 26%);
+    line-height: 1.6;
+  }
+  
+  .part-4 {
+    height: 50vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  
+    display: flex;
+    align-items: end;
+    justify-content: start;
+  }
+  
+  .btn-part-4 {
+    width:100%;
+    height: 12vw;
+    background-color: hsl(234, 29%, 20%);
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    border-style: none;
+    border-radius: 8px;
+    margin-bottom: 10vw;
+  }
+
+  .btn-part-4:focus{
+    outline:none;
+  }
+  
+  /* .btn-part-4:focus {
+    background-image: linear-gradient(to right,#FF527B, #FF6A3A);
+  } */
